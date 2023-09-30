@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="./index.js">
+      const element = (
+          <div className ="container">
+              <h1 className = "heading"> Congratulation </h1>
+              <div className="inside-container">
+                  <img src=
+                  "https://assets.ccbp.in/frontend/react-js/congrats-card-profile-img.png"
+                  className="image" />
+                  <h1 className = "inside-heading"> Kiran V </h1>
+                  <p className = "paragraph"> Vishnu institute of Computer Education and Technology,
+                      Bhimavaram</p>
+                  <img src=
+                  "https://assets.ccbp.in/frontend/react-js/congrats-card-watch-img.png"
+                  className="image" />
+                </div>
+            </div>
+      );
+      ReactDOM.render(element,document.getElementBYId("root"));
+    </script>
+  </body>
+</html>
